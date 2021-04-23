@@ -19,7 +19,7 @@
           - exporting rootReducer.js && store.js
 
 
-        * [login] login folder
+        - [login] login folder
           - [actionCreator.js]actionCreator.js
             _ importing constants
             _ accessing actions defined in the constants file \* each key is going to have 3 :
@@ -32,3 +32,17 @@
             - has the initial state
             - separate functions each one for each key and will be using switch case
             - earch function has 3 cases [ actions.USERNAME, actions.USERNAME_SUCCESS, actions.USERNAME_FAILURE]
+        - [index.js] root index.js
+            - import store from redux folder
+            - import Provider from redux npm package
+            - wrap our main component with <Provider store={store}>
+        -[App.js] root App.js
+            - import connect, useDispatch from react-redux npm
+            - import bindActionCreators from redux npm
+            - import actionCreator ( the function we created)
+            - define ( mapStateToProps , mapDispatchToProps) fn
+            - for mapStateToProps
+                - pass at components props the key from reducer we wanna use
+                - inside mapStateToProps fn set the key and value ( login: state?.login.username )
+            - for mapDispatchToProps
+                - define the functions ( actions ) which will be used by dispatch to update the store
