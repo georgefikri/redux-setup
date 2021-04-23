@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.input-field-container {
+  .input-icon-cont {
+    height: 36px;
+    background-color: $orance-color;
+    width: 34px;
+    display: inline-block;
+    color: $white-color;
+    text-align: center;
+    font-size: $input-icons-size;
+    position: absolute;
+    padding-top: 5px;
+    margin-top: 1px;
+  }
+}
+
+.form-horizontal {
+  .form-input-missing,
+  .multi-select-missing > div div,
+  [class*='-missing'] {
+    border-color: $grey-color !important;
+  }
+}
+
+.vertical-tabs-rightCont .input-field-container input {
+  padding-left: 40px;
+}
