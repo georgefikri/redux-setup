@@ -31,10 +31,13 @@
 - [index.js] root index.js
   - import store from redux folder
   - import Provider from redux npm package
-  - wrap our main component with <Provider store={store}> -[App.js] root App.js
+  - wrap our main component with <Provider store={store}>
+  - [App.js] root App.js
   - import connect, useDispatch from react-redux npm
-  - import bindActionCreators from redux npm - import actionCreator ( the function we created)
-  - define ( mapStateToProps , mapDispatchToProps) fn - for mapStateToProps
+  - import bindActionCreators from redux npm
+  - import actionCreator ( the function we created)
+  - define ( mapStateToProps , mapDispatchToProps) fn
+  - for mapStateToProps
   - pass at components props the key from reducer we wanna use
   - inside mapStateToProps fn set the key and value ( login: state?.login.username )
   - for mapDispatchToProps
